@@ -12,6 +12,10 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/manager", (req, res) => {
+  res.render("manager");
+});
+
 app.use((req, res, next) => {
   res.status(404).render("404");
 });

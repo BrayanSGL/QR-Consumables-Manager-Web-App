@@ -1,0 +1,68 @@
+<%- include("templates/header", {Titulo: "Manager"}) %>
+<div class="container my-5">
+  <form>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Código</span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Ingrese el código"
+        aria-label="Código"
+        aria-describedby="basic-addon1"
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon2">Lote</span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Ingrese el lote"
+        aria-label="Lote"
+        aria-describedby="basic-addon2"
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon3">País</span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Ingrese el país"
+        aria-label="País"
+        aria-describedby="basic-addon3"
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon4">Caducidad</span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Ingrese la fecha de caducidad"
+        aria-label="Caducidad"
+        aria-describedby="basic-addon4"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="descripcion" class="form-label">Descripción</label>
+      <div class="input-group">
+        <span class="input-group-text" id="basic-addon5">Descripción</span>
+        <input
+          type="text"
+          class="form-control"
+          id="descripcion"
+          placeholder="Ingrese la descripción"
+          aria-describedby="basic-addon5"
+        />
+      </div>
+      <div class="form-text" id="basic-addon6">
+        Ingrese una breve descripción del consumible.
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary">Cargar</button>
+  </form>
+</div>
+<%- include("templates/footer") %>
